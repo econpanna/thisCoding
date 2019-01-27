@@ -59,22 +59,20 @@ do_action( 'learn-press/before-single-course' );
                         <div class="course-meta">
 
                             <?php do_action( 'thim_single_course_meta' );?>
-                              <!-- lkm 201803 start -->                       
-                            <div class="course-subtitle-yn">
+                            <!-- lkm 201901 당분간 화면해설, 수화, 자막 기능 사용안할 예정으로 주석처리 start -->                       
+                            <!-- <div class="course-subtitle-yn">
                                 <label>자막</label>
-                                <div class="value"><?php echo do_shortcode('[acf field="subtitle_yn"]'); ?></div>
+                                <div class="value"><?php //echo do_shortcode('[acf field="subtitle_yn"]'); ?></div>
                             </div>
                             <div class="course-signlang-yn">
                                 <label>수화</label>
-                                <div class="value"><?php echo do_shortcode('[acf field="signlang_yn"]'); ?></div>
+                                <div class="value"><?php //echo do_shortcode('[acf field="signlang_yn"]'); ?></div>
                             </div>
-                            <!-- 
 							<div class="course-dvs-yn">
                                 <label>화면해설</label>
-                                <div class="value"><?php echo do_shortcode('[acf field="dvs_yn"]'); ?></div>
-                            </div>
-							-->
-                            <!-- lkm 201803 end -->
+                                <div class="value"><?php //echo do_shortcode('[acf field="dvs_yn"]'); ?></div>
+                            </div> -->
+                            <!-- lkm 201901 당분간 화면해설, 수화, 자막 기능 사용안할 예정으로 주석처리 end -->
 
                         </div>
 
