@@ -1,0 +1,38 @@
+.thim-twitter-slider {
+  max-width: 870px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 95px;
+  text-align: center;
+  a {
+    color: #2ec4b6;
+  }
+  .tweet-item {
+    .top {
+      .fa {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+    }
+    .content {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+  }
+  .owl-controls {
+    margin-top: 20px;
+    .owl-pagination {
+      .owl-page {
+        width: 9px;
+        height: 9px;
+        margin: 0 5px;
+        border: none;
+        background-color: #dfdfdf;
+        &.active {
+
+        }
+      }
+    }
+  }
+}

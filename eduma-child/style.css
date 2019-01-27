@@ -1,0 +1,206 @@
+/*
+Theme Name: Eduma Child
+Theme URI: http://educationwp.thimpress.com/
+Template: eduma
+Author: ThimPress
+Author URI: https://thimpress.com
+Description: Premium WordPress LMS theme.
+Tags: two-columns,three-columns,left-sidebar,right-sidebar,custom-background,custom-header,custom-menu,editor-style,post-formats,rtl-language-support,sticky-post,theme-options,translation-ready,accessibility-ready
+Version: 3.3.1.1520865012
+Updated: 2018-03-12 23:30:12
+
+*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+	font-family: 'Noto Sans KR', sans-serif !important;
+} 
+
+/* 추가 - lkm 201803 */
+
+/* 공통 start */
+/* 로고 위치 조정 */
+#masthead.header_v4 .navigation .width-logo img {
+	margin-top: 4px;
+}
+/* 헤더 배경이미지 제거 */
+.top_site_main.style_heading_2 {
+	background-image: none !important;
+}
+/* 헤더 배경색 변경 */
+.top_site_main {
+	background-color: rgba(186, 192, 198, 0.95);
+}
+/* 헤더 높이 줄이기*/
+.top_heading.style_content_2 .top_site_main.style_heading_2 .page-title-wrapper, /* 강좌소개*/
+.top_site_main.style_heading_2 .page-title-wrapper { /* 그 외 모든 페이지*/
+/* 	padding-top: 40px; */
+	padding-bottom: 100px;
+}
+/* 헤더 - 강좌소개 - 에 breadcrumbs 위치 조정*/
+.top_heading.style_content_2.style_heading_2_out .breadcrumbs-wrapper {
+	bottom: 0;
+}
+/* 헤더 메뉴 글자 두께 조정*/
+#masthead.header_v4 .navigation .width-navigation .navbar-nav>li>a {
+/* 	font-weight: 400; */
+}
+/* 헤더 오른쪽 메뉴 글자 두께 조정*/
+#masthead.header_v4 .navigation .menu-right .thim-link-login .login, 
+#masthead.header_v4 .navigation .menu-right .thim-link-login .logout {
+/* 	font-weight: 400; */
+}
+/* 헤더 페이지 제목 글자 두께 조정*/
+.top_site_main.style_heading_2 .page-title-wrapper h1 {
+/* 	font-weight: 400; */
+}
+/* footer copyright 넓이 조정*/
+@media (min-width: 1024px) {
+	footer#colophon .copyright-area .text-copyright {
+		width: 600px;
+	}
+}
+/* 공통 end */
+
+/* Home */
+.thim_bg_gradient:before {
+	background: linear-gradient(to right,#1d9b95 0,#1d889b 100%) !important;
+}
+
+
+/* 로그인 페이지, 팝업 상단 제목 두께 조정*/
+.thim-style-content-new-1 .thim-login .title,
+.thim-style-content-new-1 #thim-popup-login.has-shortcode .thim-login .title {
+/* 	font-weight: 400; */
+}
+
+/* 홈 페이지의 grid1(widget)에서 강좌별 교수자 가리기 */
+.thim-course-grid .course-item .thim-course-content .author {
+	display: none;
+}
+/* 홈 페이지의 grid1(widget)에서 자막 수화 화면해설 표시 글자 두께 조정 */
+.thim-widget-courses .grid-1 .thim-course-grid .course-item .thim-course-content .course-meta .course-students .value {
+/* 	font-weight: 400; */
+}
+
+/* 전체강좌 페이지에서 레이아웃 스위치 기능 가리기 */
+#lp-archive-courses .switch-layout {
+	display: none;
+}
+/* 전체강좌 페이지에서 강좌별 교수자 가리기 */
+.thim-course-grid .course-item .thim-course-content .course-author {
+	display: none;
+}
+/* 전체강좌 페이지에서 강좌별 자막 수화 화면해설 표시 간 간격 조정*/
+.thim-course-grid .course-item .thim-course-content .course-meta .course-students {
+	margin-left: 6px;
+}
+/* 전체강좌 페이지에서 강좌별 자막 수화 화면해설 표시 색*/
+.thim-course-grid .course-item .thim-course-content .course-meta .value {
+	color: #2575fc;
+}
+
+/*******************
+ * 개별 강좌 소개
+ *******************/
+/* 강좌소개 헤더 강좌 제목 글자 두께 조정*/
+.top_site_main.style_heading_2 .page-title-wrapper h2 {
+/*  	font-weight: 400;  */
+}
+/* 강좌소개 상단 이미지 가리기*/
+.thim-style-content-new-1 .header_single_content .course-thumbnail {
+	display: none;
+}
+/* 강좌소개 상단 이미지 가린 후 meta 정보 스타일 조정*/
+.learn-press .course-meta {
+	padding-top: 170px; /* 위치 조정*/
+	margin-bottom: 5px; /* 하단 폭 조정*/
+}
+/* 강좌소개 meta 정보 배경색 변경*/
+.thim-style-content-new-1 .header_single_content .bg_header {
+	background-color: #1d889b33;
+}
+/* 강좌소개 meta 정보 중 사용하지 않는 정보 가리기*/
+.thim-style-content-new-1 #lp-single-course .course-meta>.course-categories,
+.thim-style-content-new-1 #lp-single-course .course-meta>.course-students,
+.thim-style-content-new-1 #lp-single-course .course-meta>.course-review,
+.thim-style-content-new-1 #lp-single-course .course-meta>.course-last-update
+{
+	display: none;
+}
+/* 강좌소개 meta 정보 label 글자 두께 조정*/
+.thim-style-content-new-1 #lp-single-course .course-meta label {
+/* 	font-weight: 400; */
+}
+/* 강좌소개 우측 info 박스 가리기*/
+/* .thim-style-content-new-1 #tab-course-description .thim-course-info {
+	display: none;
+} */
+.thim-style-content-new-1 #learn-press-course-description .thim-course-info {
+	display: none;
+}
+
+/* 강좌소개 우측 info 박스 가린 후 너비 맞추기*/
+/* .thim-style-content-new-1 #tab-course-description .thim-course-content {
+	width: 100%;
+} */
+.thim-style-content-new-1 #learn-press-course-description .thim-course-content {
+	width: 100%;
+	border:0;
+}
+
+/* 강좌소개 스티키사이드바 위치 조정*/
+.entry-content .content_course_2 .row #sidebar {
+	padding-top: 106px;
+}
+/* 강좌소개에서 강의계획목록 글자 두께 조정*/
+.thim-style-content-new-1 #learn-press-course-curriculum ul.curriculum-sections .section-content .course-lesson .lesson-title {
+/* 	font-weight: 400; */
+}
+/* 강좌소개 하단에 You May Like 가리기*/
+.thim-ralated-course {
+	display: none;
+}
+
+/* 강좌소개 하단 추가 메뉴바 가리기*/
+.thim-course-menu-landing {
+	display:none;
+}
+
+#colophon.has-thim-course-menu {
+	margin-bottom : 0px !important;
+}
+
+/* 강좌소개에서 외부링크 연결 안내 문구 강조 디자인 */
+.learn-press.message.external-link-notice-new {
+	background-color: #fadbd8; 
+	color: #cd6155;
+}
+
+/* 이름 첫글자 대문자 처리 제거*/
+.name,
+.author-name {
+	text-transform: none !important;
+}
+
+/* sidebar 무료강좌 수강신청버튼*/
+#sidebar .course-external-link .button {
+	color: #FFF;
+    width: 100%;
+    font-size: 16px;
+    padding: 0;
+    line-height: 40px;
+    font-weight: 300;
+    border-radius: 25px;
+    text-transform: none;
+}
+
+/* 내 프로필의 주문 목록에서 주문 복원 기능 제거*/
+.profile-recover-order {
+	display: none;
+}
+
+/* 수화 제공 강좌, 자막 제공 강좌 페이지 하단의 댓글 기능 제거 */
+#comments {
+	display: none;
+}
